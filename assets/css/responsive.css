@@ -1,0 +1,144 @@
+/* PC */
+@media (min-width:64em){
+  #moblie-menu-button{
+    display: none !important;
+  }
+}
+/* Tablet && Moblie */
+
+@media (max-width:63.9375em){
+  .sm-good-button{
+    padding: 19px 16px !important;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex !important;
+  }
+
+  .contact-container .form-controll {
+    padding: 13px;
+    font-size: 16px;
+  }
+
+  .contact-container .form-submit {
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+  .contact-container .info-contact {
+  line-height: 2;
+  }
+
+  #footer i{
+    margin: 0 8px;
+    font-size: 24px;
+  }
+  #footer p{
+    padding: 12px 0;
+  }
+
+
+}
+/* Tablet */
+@media (min-width:46.25em) and (max-width:63.9375em){
+  #moblie-menu-button{
+    display: none !important;
+  }
+}
+/* Moblie */
+@media (max-width:46.1875em){
+  .s-full-width, .s-col-full{
+    width:100% !important;
+  }
+
+
+  #header{
+    overflow: hidden;
+  }
+  
+  #header .search-btn{
+    display: none;
+  }
+  #navbar li a{
+    line-height: 48px ;
+  }
+
+
+  #navbar > li{
+    display: block;
+  }
+  #navbar .subnav{
+    position: inherit;
+    background-color: rgb(71, 71, 71);
+  }
+
+  #navbar .subnav a{
+    color: white;
+    padding: 0 40px;
+    line-height: 46px;
+  }
+
+  #navbar > li:first-child{
+    display: inline-block;
+  }
+
+
+  #navbar{
+    display: block;
+    position: relative;
+  }
+
+  .moblie-menu-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  #content .member-item {
+    width: 100%;
+  }
+
+  #content .member-img{
+    width: 229px;
+  }
+
+  #Tour-section .place-item{
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .contact-container .col{
+    float: none;
+    margin-top: 0px;
+  }
+
+  
+
+
+  .contact-container .contact-sub-input{
+    padding: 0 ;
+  }
+
+  .contact-container .form-controll{
+    margin: 2px;
+  }
+
+
+
+  .info-contact{
+    margin-bottom: 32px;
+  }
+
+  .modal .modal-container{
+    margin: 8px;
+  }
+
+  #Tour-section .place-buy-btn{
+    font-size: 16px;
+  }
+  
+
+ 
+
+
+    
+}

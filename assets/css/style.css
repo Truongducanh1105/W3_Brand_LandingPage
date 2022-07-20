@@ -1,0 +1,618 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-family: Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+#main{
+
+}
+
+a{
+  text-decoration: none;
+}
+
+.text-white{
+  color: white;
+}
+
+.row{
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.row::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.col{
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.col-half{
+  width: 50%;
+}
+
+.col-third{
+  width: 33.33333%;
+}
+
+.mt-16{
+  margin-top: 16px;
+}
+.mt-32{
+  margin-top: 32px;
+}
+
+
+.full-with{
+  width: 100%;
+}
+
+.pull-right{
+  float: right !important;
+}
+
+.text-center{
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+#header{
+  height: 46px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#navbar{
+  display: inline-block;
+}
+
+#navbar > li{
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+
+}
+
+
+
+
+#navbar li a {
+  color: aliceblue;
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0 24px;
+  display: block;
+  
+}
+
+#navbar li:hover .subnav{
+  display: block;
+}
+
+#navbar>li:hover >a,
+#navbar li >ul >li:hover >a {
+  color: white;
+  background-color: gray;
+  
+
+  
+}
+
+
+
+
+#navbar .subnav{
+  display: none;
+  position: absolute;
+  background-color: white;
+  list-style-type: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  top: 100%;
+  left: 0%;
+  
+}
+
+#navbar .nav-icon-down{
+  font-size: 12px;
+}
+
+#navbar .subnav a{
+  min-width: 160px;
+  color: black;
+  padding: 0 16px;
+  line-height: 38px;
+ 
+  
+}
+#navbar .subnav li{
+  
+  
+}
+
+#navbar .nav-search{
+  font-size: 18px;
+}
+
+#header .moblie-menu-button,
+#header .search-btn{
+  display: inline-block;
+  float: right;
+  line-height: 46px;
+  padding: 0 24px;
+
+}
+
+#header .moblie-menu-button,
+#header .search-btn a{
+  color: white;
+
+}
+
+
+#header .search-btn:hover{
+  background-color:#f44336 ;
+  cursor: pointer;
+}
+
+#header .moblie-menu-button:hover{
+  color: white;
+  background-color: #757575;
+}
+
+#header .nav-search {
+ font-size: 18px;
+}
+
+
+
+#slider{
+
+margin-top: 46px;
+padding-top: 50%;
+background: url('../img/banner/slider1.jpg') top center / cover no-repeat;
+position: relative;
+
+}
+
+#slider .text-content{
+  width: 100%;
+  bottom: 47px;
+  color: white;
+  position: absolute;
+  text-align: center;
+}
+
+#slider .text-heading{
+  font-weight: 500;
+  text-shadow: 0 0 2px #333;
+}
+
+#slider .text-description{
+  margin-top: 25px;
+  text-shadow: 0 0 2px #333;
+
+
+}
+
+
+/* Content */
+#content{
+
+}
+
+.content-section{
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  max-width: 100%;
+  padding: 16px;
+
+}
+
+#content .section-heading{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 4px;
+
+}
+
+#content .section-sub-heading{
+  text-align: center;
+  font-size: 15px;
+  margin-top: 25px;
+  font-style: italic;
+  opacity: 0.6;
+
+}
+/* About */
+#content .about-text{
+  margin-top: 25px;
+  margin-bottom: -36px;
+  text-align: justify;
+  line-height: 1.4;
+  font-size: 15px;
+
+}
+
+#content .members-list{
+  margin-top: 47px;
+  overflow: hidden;
+}
+
+#content .member-item{
+  float: left;
+  width: 33.33333%;
+  text-align: center;
+
+}
+#content .member-name{
+font-size: 15px;
+margin: 15px 0;
+}
+#content .member-img{
+width: 154px;
+border-radius: 5px;
+  }
+
+/* Tour */
+#Tour-section{
+  background: black;
+  width: 100%;
+}
+#Tour-section .section-heading{
+  color: white;
+}
+#Tour-section .section-sub-heading{
+  color: white;
+}
+
+#Tour-section .tour-list{
+  background-color: white;
+  margin-top: 45px;
+}
+#Tour-section .tour-list li{
+  border-bottom: 1px solid black;
+  padding: 8px 16px;
+  font-size: 15px;
+  color: #757575;
+  list-style-type:none;
+}
+
+#Tour-section .alert{
+  background-color: #f44336;
+  color: white;
+  padding: 3px 16px;
+  margin-left: 16px;
+  font-size: 15px;
+
+}
+
+
+#Tour-section .quantity{
+  float: right;
+  background-color: #000;
+  color: white;
+  height: 22px;
+  width: 24px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 24px;
+  padding: 0 8px;
+  margin-top: -3px;
+}
+
+/* Tour Place */
+#Tour-section .place-list{
+  margin: 32px -8px 0px;
+  overflow: hidden;
+
+}
+
+#Tour-section .place-item{
+  float: left;
+  width: 33.33333%;
+  padding: 0 8px;
+
+
+}
+
+#Tour-section .place-img{
+  width: 100%;
+  display: block;
+}
+#Tour-section .place-img:hover{
+  opacity: 0.6;
+
+}
+
+#Tour-section .place-body{
+padding: 0.15px 16px;
+background-color: white;
+}
+
+#Tour-section .place-heading{
+  font-weight: 550;
+  margin: 15px 0;
+  font-size: 15px;
+
+}
+
+#Tour-section .place-time{
+  margin: 15px 0;
+  font-size: 15px;
+  opacity: 0.6;
+
+}
+
+#Tour-section .place-desc{
+  margin: 15px 0;
+  font-size: 15px;
+  line-height: 1.4;
+
+}
+
+#Tour-section .place-buy-btn{
+  padding: 11px 16px;
+  margin-bottom: 16px;
+  width: 114px;
+  height: 38px;
+  background-color: #000;
+  color: white;
+  display: inline-block;
+}
+
+#Tour-section .place-buy-btn:hover{
+ background-color: gray;
+ color: black;
+}
+
+/* Modal */
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  display: none;
+
+}
+
+.modal.open{
+  display: flex;
+}
+
+.openMenu{
+  overflow: visible !important;
+  height: auto !important;
+}
+
+.modal .modal-container{
+  background: white;
+  min-height: 200px;
+  width: 900px;
+  max-width: calc(100%-32px);
+  position: relative;
+  animation: modalFadeIn ease 0.5s ;
+
+}
+
+.modal .modal-close{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px;
+  color: white;
+  cursor: pointer;
+
+}
+
+.modal .modal-close:hover{
+  opacity: 0.6;
+
+}
+
+.modal .modal-header{
+  background: #009688;
+  height: 129px;
+  font-size: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.modal .modal-header i{
+margin:  0 15px;
+
+}
+
+
+
+
+.modal .modal-body{
+  padding: 12px;
+
+}
+
+.modal .modal-label{
+  display: block;
+  margin-bottom: 15px;
+  font-size: 15px;
+
+
+}
+
+.modal .modal-input{
+  height: 37px;
+  width: 100%;
+  padding: 8px 4px;
+  margin-bottom: 24px;
+
+
+}
+
+#buy-tickets{
+  height: 39px;
+  width: 100%;
+  padding: 22px;
+  margin: 16px 0;
+  background: #009688;
+  border: 0;
+  font-size: 15px;
+  color: white;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+
+
+}
+
+#buy-tickets:hover{
+  opacity: 0.9;
+
+
+}
+
+.modal .ti-check{
+ font-weight: 700;
+ color: white;
+
+}
+.modal .modal-footer{
+text-align: right;
+padding: 12px;
+ 
+ }
+
+.modal .modal-footer a{
+color: #2196F3;
+  
+  }
+
+@keyframes modalFadeIn{
+  from{
+    transform: translateY(-140px);
+    opacity: 0;
+
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
+
+  }
+}
+
+
+/* Contact */
+.contact-container{
+  margin-top: 48px;
+
+
+}
+
+.contact-container .info-contact{
+  font-size: 18px;
+}
+
+.info-contact i{
+  width: 30px;
+  display: inline-block;
+  line-height: 1.5;
+}
+
+.contact-container .contact-sub-input{
+  font-size: 15px;
+
+}
+
+.contact-container .form-controll{
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin: 4px;
+  outline: none;
+
+
+}
+
+
+.contact-container .form-submit{
+  background-color: #000;
+  color: white;
+  padding: 10px 16px;
+  float: right;
+  cursor: pointer;
+  -webkit-appearance: none;
+
+
+}
+
+.contact-container .form-submit:hover{
+opacity: 0.6;
+
+
+}
+
+.contact-container .contact-input{
+  display: block;
+}
+
+.map-img{
+}
+
+
+
+
+#footer{
+  height: 216px;
+  padding: 64px 16px;
+}
+
+.footer-section {
+margin-bottom: 16px;
+}
+
+#footer i{
+  width: 17px;
+  height: 24px;
+  padding: 2px;
+  color: rgb(100, 100, 100);
+}
+
+#footer p{
+font-size: 12px;
+padding: 2px;
+opacity: 0.6;
+color: black;
+}
+
+.footer-sub {
+  margin-top: 16px;
+  
+}
+
